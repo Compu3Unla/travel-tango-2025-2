@@ -1,6 +1,6 @@
 TP GRUPAL 4 - Maquetación de sitio web en HTML5 y CSS 
 "TRAVEL TANGO"
-El tamaño de resolucion de pantlla en el cual trabajamos es 1920x1080px y la tipografía utilizada en nuestro trabajo es Inter,
+El tamaño de resolución de pantalla en el cual trabajamos es 1920x1080px y la tipografía utilizada en nuestro trabajo es Inter,
 en sus diferentes variables: bold, bold italic, italic, light, regular y semibold.
 
 
