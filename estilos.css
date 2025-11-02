@@ -225,3 +225,8 @@ input{
     background-color: rgb(41, 35, 92);
     margin: 0px 20px 0px 10px;
 }
+
+/* celular */
+
+@media screen and (max-widht: 600px) {
+}
