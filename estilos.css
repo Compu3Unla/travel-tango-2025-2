@@ -10,6 +10,28 @@
     --naranjaclaro: rgb(247, 169, 160);
 }
 
+/* --- RESET GENERAL DE MÁRGENES Y PADDING --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- AJUSTE DEL BODY --- */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* evita scroll horizontal si algo se sale del ancho */
+}
+
+header, 
+.destino-destacado,
+footer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /*configuraciones generales*/
 
 @font-face {
@@ -310,4 +332,76 @@ input{
 /* celular */
 
 @media screen and (max-widht: 600px) {
+}
+
+/* --- BANNER CON SLIDES AUTOMÁTICOS --- */
+.destino-destacado {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.destino-destacado img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: cambioBanner 15s infinite;
+}
+
+.destino-destacado img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.destino-destacado img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.destino-destacado img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+@keyframes cambioBanner {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* --- ANIMACIÓN SUAVE EN PREGUNTAS FRECUENTES --- */
+details {
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-bottom: 10px;
+  border: 1px solid var(--gris);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+summary {
+  cursor: pointer;
+  font-family: "inter semi bold";
+  color: var(--azul);
+  list-style: none;
+}
+
+details[open] {
+  background-color: #f7f7f7;
+  transition: all 0.4s ease;
+}
+
+details p {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+details[open] p {
+  opacity: 1;
+  max-height: 300px;
+  margin-top: 10px;
 }
