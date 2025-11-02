@@ -1,6 +1,16 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
 
+:root{
+    --azul: rgb(41, 35, 92);
+    --naranja: rgb(255, 94, 36);
+    --gris: rgb(217, 217, 217);
+    --blanco: rgb(255, 255, 255);
+    --negro: rgb(0, 0, 0);
+}
+
+/*configuraciones generales*/
+
 @font-face {
     font-family: inter bold;
     src: url(fuentes/Inter_18pt-Bold.ttf) format(truetype);
@@ -43,12 +53,7 @@
     font-style: normal;
 }
 
-
-
-
-
-
-
+/*aca empiezan las aplicaciones*/
 
 h2 {
     font-family: 'inter bold italic';
@@ -61,12 +66,148 @@ p {
     font-family: 'inter regular';
 }
 
-form {
-    width: 40%;
+a {
+    font-family: "inter bold";
+    text-decoration: none;
+    font-size: 5rem;
+    color: var(--blanco);
+    font-size: 20px;
+    text-wrap-style: balance;
+}
+
+a:hover {
+    color: var(--naranja);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--azul);
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 1200px;
+}
+nav{
+    display: flex;
+    gap: 40px;
+}
+
+footer {
+    text-wrap-style: balance;
+    text-align: center;
+    font-size: 20px;
+    min-height: 25vh;
+    padding: 50px;
+    margin: 5px;
+    border-top-width: 30px;
+    border-bottom-width: 0px;
+    background-color: var(--azul);
+}
+
+footer p {
+    color: var(--blanco);
+}
+
+ul {
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* contacto */
+
+#quienes-somos {
+    max-width: 1000px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: 50px auto;
+    height: initial;
+}
+
+.quienes-somos {
+    border-radius: 15px 15px;
+    background-color: var(--gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1rem;
+    padding: 30px;
+
+    p,
+    h3 {
+        color: var(--azul);
+        text-align: left;
+        text-wrap: pretty;
+    }
+}
+
+#crear-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#crear-usuario h1{
+    color: var(--naranja);
+    font-size: 2em;
+    line-height: 1.4;
+    font-family: inter italic;
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+#crear-usuario article{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 80%;
+max-width: 1000px;
+}
+/* formulario */
+
+.formulario {
+    flex: 1;
+    text-align: left;
+}
+
+.formulario h2 {
+color: var(--azul);
+font-family: inter italic;
+margin-bottom: 20px;
+}
+
+#crear-usuario img {
+    flex: 1;
+    max-width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
     border: 1px solid rgb(75, 75, 75);
     padding: 20px;
-    display: flex;
     flex-wrap: wrap;
 }
 
