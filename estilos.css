@@ -7,6 +7,7 @@
     --gris: rgb(217, 217, 217);
     --blanco: rgb(255, 255, 255);
     --negro: rgb(0, 0, 0);
+    --naranjaclaro: rgb(247, 169, 160);
 }
 
 /* --- RESET GENERAL DE MÁRGENES Y PADDING --- */
@@ -247,6 +248,86 @@ input{
     background-color: rgb(41, 35, 92);
     margin: 0px 20px 0px 10px;
 }
+
+/* destinos */
+
+#viajes {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#viajes h2 {
+    color: var(--naranja);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.galeria article {
+    background-color: var(--azul);
+    color: var(--blanco);
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease,
+    box shadow 0.3s ease;
+}
+
+.galeria article:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px;
+}
+
+.galeria article img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.galeria article h3{
+    font-family: inter bold;
+    font-size: 1.2em;
+    margin: 15px 0 5px;
+    color: var(--blanco);
+}
+
+.galeria article p{
+    font-family: inter regular;
+    font-size: 0.9em;
+    margin: 0 15px 15px;
+    color: var(--blanco);
+}
+
+.galeria article button{
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.galeria article button:hover{
+    background-color: var(--naranjaclaro);
+}
+
+
+
+
+
 
 /* celular */
 
