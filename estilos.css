@@ -82,7 +82,7 @@ a:hover {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 50px;
     background-color: var(--azul);
@@ -230,14 +230,19 @@ input{
 /* destinos */
 
 #viajes {
-    text-align: center;
-    padding: 40px 0;
+    flex-direction: column;
+    max-width: 1400;
+    padding: 40px;
 }
 
 #viajes h2 {
     color: var(--naranja);
     font-size: 2em;
     margin-bottom: 30px;
+    max-width: 1400px;
+    justify-content: left;
+    margin: auto;
+    padding: 40px;
 }
 
 .galeria {
@@ -245,7 +250,7 @@ input{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -302,10 +307,13 @@ input{
     background-color: var(--naranjaclaro);
 }
 
+/* video */
 
-
-
-
+#video{
+    justify-content: center;
+    max-width: 1400;
+    padding: 40px;
+}
 
 /* celular */
 
