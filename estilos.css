@@ -77,6 +77,13 @@ footer {
 }
 
 /*aca empiezan las aplicaciones*/
+h1 {
+    font-family: 'inter bold ';
+    text-align: center;
+    color: var(--azul);
+    font-size: 3em;
+    margin-bottom: 30px;
+}
 
 h2 {
     font-family: 'inter bold italic';
