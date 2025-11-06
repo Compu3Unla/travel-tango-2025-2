@@ -21,7 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* evita scroll horizontal si algo se sale del ancho */
+  overflow-x: hidden; 
 }
 
 header, 
@@ -125,17 +125,24 @@ nav{
 footer {
     text-wrap-style: balance;
     text-align: center;
-    font-size: 20px;
+    font-size: 0.8rem;
     min-height: 25vh;
     padding: 50px;
-    margin: 5px;
     border-top-width: 30px;
     border-bottom-width: 0px;
     background-color: var(--azul);
 }
 
+.contenedor-footer{
+    padding: 10px;
+}
+
 footer p {
     color: var(--blanco);
+}
+
+.servicios-y-legajo, .direccion, .locales {
+    font-family: inter light;
 }
 
 ul {
@@ -323,6 +330,7 @@ input{
 .galeria article button:hover{
     background-color: var(--naranjaclaro);
 }
+
 
 
 
