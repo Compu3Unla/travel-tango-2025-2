@@ -80,9 +80,17 @@ footer {
 
 h2 {
     font-family: 'inter bold italic';
+    text-align: center;
+    color: var(--naranja);
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: 'inter bold italic';
     color: rgb(41, 35, 92);
-    font-size: 20px;
-    text-align: left;
+    font-size: 18px;
+    text-align: center;
 }
 
 p {
@@ -104,7 +112,7 @@ a:hover {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 50px;
     background-color: var(--azul);
@@ -156,16 +164,15 @@ ul {
 
 /* contacto */
 
-#quienes-somos {
-    max-width: 1000px;
+#quienes-somos article{
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     color: white;
     margin: 50px auto;
     height: initial;
+    gap: 20px;
 }
 
 .quienes-somos {
@@ -177,6 +184,7 @@ ul {
     justify-content: center;
     line-height: 1rem;
     padding: 30px;
+    max-width: 600px;
 
     p,
     h3 {
@@ -186,11 +194,17 @@ ul {
     }
 }
 
+#quienes-somos img{
+    width: 283px;
+    height: auto;
+}
+
 #crear-usuario{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    line-height: 3rem;
     padding: 40px 0;
 }
 
@@ -200,7 +214,7 @@ ul {
     line-height: 1.4;
     font-family: inter italic;
     margin-bottom: 40px;
-    width: 80%;
+    max-width: 800px;
 }
 
 #crear-usuario article{
@@ -209,8 +223,9 @@ ul {
     align-items: flex-start;
     gap: 40px;
     width: 80%;
-max-width: 1000px;
+    max-width: 1000px;
 }
+
 /* formulario */
 
 .formulario {
@@ -259,14 +274,20 @@ input{
 /* destinos */
 
 #viajes {
-    text-align: center;
-    padding: 40px 0;
+    flex-direction: column;
+    max-width: 1400;
+    padding: 40px;
 }
 
 #viajes h2 {
     color: var(--naranja);
     font-size: 2em;
     margin-bottom: 30px;
+    max-width: 1400px;
+    justify-content: left;
+    margin: auto;
+    padding: 40px;
+    text-align: left;
 }
 
 .galeria {
@@ -274,7 +295,7 @@ input{
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -287,7 +308,7 @@ input{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease,
-    box shadow 0.3s ease;
+    box shadow; 0.3s ease;
 }
 
 .galeria article:hover{
@@ -331,10 +352,77 @@ input{
     background-color: var(--naranjaclaro);
 }
 
+/* destinos de la galeria */
+
+.flecha-atras {
+    padding: 10px;
+}
+
+#centrar {
+    border-radius: 15px 15px;
+    background-color: var(--verde);
+    border: 8px solid grey;
+    max-width: 900px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--azul);
+    margin: 50px auto;
+    height: initial;
+}
+
+#centrar article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 3rem;
+    gap: 25px;
+    padding: 30px;
+
+    h1 {
+        font-family: inter bold;
+        font-size: 30px;
+        text-align: left;
+    }
+
+    p {
+        color: var(--azul);
+        text-align: left;
+        text-wrap: pretty;
+        font-size: 15px;
+        text-wrap-style: balance;
+        line-height: 1.5rem;
+    }
+}
 
 
+/* video */
 
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
 
+    h2 {
+        text-align: left;
+    }
+
+    p {
+        font-family: inter regular;
+        text-align: left;
+        font-size: 1.2em;
+        color: var(--azul);
+    }
+}
+
+.video video {
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+}
 
 
 /* celular */
