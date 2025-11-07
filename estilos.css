@@ -213,12 +213,12 @@ ul {
   align-items: center;
   justify-content: center;
   margin: 50px auto;
-  gap: 20px;
   color: white;
 }
 
 .quienes-somos {
-  border-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: var(--gris);
   display: flex;
   flex-direction: column;
@@ -245,9 +245,10 @@ ul {
 }
 
 #quienes-somos img {
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   width: 480px;
-  height: auto;
+  height: 360px;
 }
 
 /* === FORMULARIO === */
