@@ -90,7 +90,7 @@ h2 {
   font-family: "inter bold italic";
   text-align: center;
   color: var(--naranja);
-  font-size: 2em;
+  font-size: 1.8em;
   margin-bottom: 30px;
 }
 
@@ -213,12 +213,12 @@ ul {
   align-items: center;
   justify-content: center;
   margin: 50px auto;
-  gap: 20px;
   color: white;
 }
 
 .quienes-somos {
-  border-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: var(--gris);
   display: flex;
   flex-direction: column;
@@ -239,15 +239,16 @@ ul {
 }
 
 .quienes-somos p,
-.quienes-somos h3 {
+.quienes-somos h2 {
   color: var(--azul);
   text-align: left;
 }
 
 #quienes-somos img {
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   width: 480px;
-  height: auto;
+  height: 360px;
 }
 
 /* === FORMULARIO === */
@@ -258,6 +259,7 @@ ul {
   text-align: center;
   line-height: 3rem;
   padding: 40px 0;
+  margin: 50px auto;
 }
 
 #crear-usuario h1 {
@@ -301,8 +303,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 100%;
-  border: 1px solid rgb(75, 75, 75);
+  width: 480px;
+  border: 1px solid var(--azul);
   padding: 20px;
 }
 
@@ -319,8 +321,15 @@ input {
   color: white;
   background-color: var(--azul);
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 5px auto;
+}
+
+.enviar:hover {
+  background-color: var(--naranja);
 }
 
 /* === DESTINOS === */
@@ -768,7 +777,7 @@ details[open] p {
   font-size: 1em;
 }
 
-/* --- preguntas --- */
+/* --- PREGUNTAS --- */
 .preguntas {
   max-width: 1400px;
   margin: 80px auto;
