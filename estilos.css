@@ -768,6 +768,69 @@ details[open] p {
   font-size: 1em;
 }
 
+/* --- preguntas --- */
+.preguntas {
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 40px 60px;
+  background: var(--gris);
+  border-radius: 30px;
+}
+
+.preguntas h3 {
+  font-family: "inter bold italic";
+  color: var(--azul);
+  font-size: 28px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.preguntas details {
+  background-color: var(--gris);
+  border-bottom: 1px solid var(--azul);
+  border-radius: 0;
+  margin: 0;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.preguntas summary {
+  cursor: pointer;
+  font-family: "inter italic";
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--azul);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Flecha */
+.preguntas summary::after {
+  content: "▼";
+  font-size: 18px;
+  color: var(--azul);
+  transition: transform 0.3s ease;
+}
+
+.preguntas details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.preguntas p {
+  font-family: "inter regular";
+  font-size: 18px;
+  color: var(--negro);
+  line-height: 1.5;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.preguntas a {
+  color: var(--naranja);
+  text-decoration: underline;
+}
+
 /* --- DESTINOS EN 5 COLUMNAS Y 2 FILAS --- */
 .galeria {
   display: grid;
@@ -785,7 +848,6 @@ details[open] p {
   width: 100%;
   max-width: 250px;
 }
-
 
 /* === RESPONSIVE === */
 @media screen and (max-width: 600px) {
