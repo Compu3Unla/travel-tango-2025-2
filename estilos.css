@@ -1,30 +1,32 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
 
-:root{
-    --azul: rgb(41, 35, 92);
-    --naranja: rgb(255, 94, 36);
-    --gris: rgb(217, 217, 217);
-    --blanco: rgb(255, 255, 255);
-    --negro: rgb(0, 0, 0);
-    --naranjaclaro: rgb(247, 169, 160);
+/* === VARIABLES DE COLOR === */
+:root {
+  --azul: rgb(41, 35, 92);
+  --naranja: rgb(255, 94, 36);
+  --gris: rgb(217, 217, 217);
+  --blanco: rgb(255, 255, 255);
+  --negro: rgb(0, 0, 0);
+  --naranjaclaro: rgb(247, 169, 160);
 }
 
-/* --- RESET GENERAL DE MÁRGENES Y PADDING --- */
+/* === RESET GENERAL === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* --- AJUSTE DEL BODY --- */
+/* === BODY === */
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
-header, 
+/* === ESTRUCTURA GENERAL === */
+header,
 .destino-destacado,
 footer {
   width: 100%;
@@ -32,412 +34,355 @@ footer {
   padding: 0;
 }
 
-/*configuraciones generales*/
-
+/* === FUENTES === */
 @font-face {
-    font-family: inter bold;
-    src: url(fuentes/Inter_18pt-Bold.ttf) format(truetype);
-    font-weight: bold;
-    font-style: normal;
+  font-family: "inter bold";
+  src: url(fuentes/Inter_18pt-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: inter bold italic;
-    src: url(fuentes/Inter_18pt-BoldItalic.ttf) format(truetype);
-    font-weight: bold;
-    font-style: italic;
+  font-family: "inter bold italic";
+  src: url(fuentes/Inter_18pt-BoldItalic.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: inter italic;
-    src: url(fuentes/Inter_18pt-Italic.ttf) format(truetype);
-    font-weight: normal;
-    font-style: italic;
+  font-family: "inter italic";
+  src: url(fuentes/Inter_18pt-Italic.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: inter light;
-    src: url(fuentes/Inter_18pt-Light.ttf) format(truetype);
-    font-weight: lighter;
-    font-style: normal;
+  font-family: "inter light";
+  src: url(fuentes/Inter_18pt-Light.ttf) format("truetype");
+  font-weight: lighter;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: inter regular;
-    src: url(fuentes/Inter_18pt-Regular.ttf) format(truetype);
-    font-weight: normal;
-    font-style: normal;
+  font-family: "inter regular";
+  src: url(fuentes/Inter_18pt-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: inter semi bold;
-    src: url(fuentes/Inter_18pt-SemiBold.ttf) format(truetype);
-    font-weight: bold;
-    font-style: normal;
+  font-family: "inter semi bold";
+  src: url(fuentes/Inter_18pt-SemiBold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
-/*aca empiezan las aplicaciones*/
+/* === TITULOS Y TEXTOS === */
 h1 {
-    font-family: 'inter bold ';
-    text-align: center;
-    color: var(--azul);
-    font-size: 3em;
-    margin-bottom: 30px;
+  font-family: "inter bold";
+  text-align: center;
+  color: var(--azul);
+  font-size: 3em;
+  margin-bottom: 30px;
 }
 
 h2 {
-    font-family: 'inter bold italic';
-    text-align: center;
-    color: var(--naranja);
-    font-size: 2em;
-    margin-bottom: 30px;
+  font-family: "inter bold italic";
+  text-align: center;
+  color: var(--naranja);
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 
 h3 {
-    font-family: 'inter bold italic';
-    color: rgb(41, 35, 92);
-    font-size: 18px;
-    text-align: center;
+  font-family: "inter bold italic";
+  color: var(--azul);
+  font-size: 18px;
+  text-align: center;
 }
 
 p {
-    font-family: 'inter regular';
+  font-family: "inter regular";
 }
 
 a {
-    font-family: "inter bold";
-    text-decoration: none;
-    font-size: 5rem;
-    color: var(--blanco);
-    font-size: 20px;
-    text-wrap-style: balance;
+  font-family: "inter bold";
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 20px;
 }
 
 a:hover {
-    color: var(--naranja);
+  color: var(--naranja);
 }
 
+/* === HEADER === */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: var(--azul);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: var(--azul);
 }
 
 .contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    max-width: 1200px;
-}
-nav{
-    display: flex;
-    gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
 }
 
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+/* === FOOTER === */
 footer {
-    text-wrap-style: balance;
-    text-align: center;
-    font-size: 0.8rem;
-    min-height: 25vh;
-    padding: 50px;
-    border-top-width: 30px;
-    border-bottom-width: 0px;
-    background-color: var(--azul);
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 40px 20px;
+  background-color: var(--azul);
 }
 
-.contenedor-footer{
-    padding: 10px;
+.contenedor-footer {
+  padding: 10px;
 }
 
 footer p {
-    color: var(--blanco);
+  color: var(--blanco);
 }
 
-.servicios-y-legajo, .direccion, .locales {
-    font-family: inter light;
+.servicios-y-legajo,
+.direccion,
+.locales {
+  font-family: "inter light";
 }
 
+/* === LISTAS === */
 ul {
-    margin-bottom: 15px;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-/* contacto */
-
-#quienes-somos article{
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    margin: 50px auto;
-    height: initial;
-    gap: 20px;
+/* === CONTACTO === */
+#quienes-somos article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  gap: 20px;
+  color: white;
 }
 
 .quienes-somos {
-    border-radius: 15px 15px;
-    background-color: var(--gris);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 1rem;
-    padding: 30px;
-    max-width: 600px;
-
-    p,
-    h3 {
-        color: var(--azul);
-        text-align: left;
-        text-wrap: pretty;
-    }
+  border-radius: 15px;
+  background-color: var(--gris);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4rem;
+  padding: 30px;
+  max-width: 600px;
 }
 
-#quienes-somos img{
-    width: 283px;
-    height: auto;
+.quienes-somos p,
+.quienes-somos h3 {
+  color: var(--azul);
+  text-align: left;
 }
 
-#crear-usuario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    line-height: 3rem;
-    padding: 40px 0;
+#quienes-somos img {
+  width: 283px;
+  height: auto;
 }
 
-#crear-usuario h1{
-    color: var(--naranja);
-    font-size: 2em;
-    line-height: 1.4;
-    font-family: inter italic;
-    margin-bottom: 40px;
-    max-width: 800px;
+/* === FORMULARIO === */
+#crear-usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 3rem;
+  padding: 40px 0;
 }
 
-#crear-usuario article{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    width: 80%;
-    max-width: 1000px;
+#crear-usuario h1 {
+  color: var(--naranja);
+  font-size: 2em;
+  line-height: 1.4;
+  font-family: "inter italic";
+  margin-bottom: 40px;
+  max-width: 800px;
 }
 
-/* formulario */
+#crear-usuario article {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 80%;
+  max-width: 1000px;
+}
 
 .formulario {
-    flex: 1;
-    text-align: left;
+  flex: 1;
+  text-align: left;
 }
 
 .formulario h2 {
-color: var(--azul);
-font-family: inter italic;
-margin-bottom: 20px;
+  color: var(--azul);
+  font-family: "inter italic";
+  margin-bottom: 20px;
 }
 
 #crear-usuario img {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    border: 1px solid rgb(75, 75, 75);
-    padding: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  border: 1px solid rgb(75, 75, 75);
+  padding: 20px;
 }
 
-input{
-    width: 100%;
-    height: 25px;
-    background-color: rgb(226, 225, 225);
-    margin-bottom: 10px;
+input {
+  width: 100%;
+  height: 25px;
+  background-color: rgb(226, 225, 225);
+  margin-bottom: 10px;
 }
 
-.enviar{
-    height: 30px;
-    width: 60px;
-    color: white;
-    background-color: rgb(41, 35, 92);
-    margin: 0px 20px 0px 10px;
+.enviar {
+  height: 30px;
+  width: 80px;
+  color: white;
+  background-color: var(--azul);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* destinos */
-
+/* === DESTINOS === */
 #viajes {
-    flex-direction: column;
-    max-width: 1400;
-    padding: 40px;
+  flex-direction: column;
+  max-width: 1400px;
+  padding: 40px;
+  margin: 0 auto;
 }
 
 #viajes h2 {
-    color: var(--naranja);
-    font-size: 2em;
-    margin-bottom: 30px;
-    max-width: 1400px;
-    justify-content: left;
-    margin: auto;
-    padding: 40px;
-    text-align: left;
+  color: var(--naranja);
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: left;
 }
 
 .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1400px;
-    margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+  margin: auto;
+  transition: all 0.5s ease-in-out;
 }
 
 .galeria article {
-    background-color: var(--azul);
-    color: var(--blanco);
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease,
-    box shadow; 0.3s ease;
+  background-color: var(--azul);
+  color: var(--blanco);
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.galeria article:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px;
+.galeria article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-.galeria article img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+.galeria article img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.galeria article h3{
-    font-family: inter bold;
-    font-size: 1.2em;
-    margin: 15px 0 5px;
-    color: var(--blanco);
+.galeria article img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
-.galeria article p{
-    font-family: inter regular;
-    font-size: 0.9em;
-    margin: 0 15px 15px;
-    color: var(--blanco);
+.galeria article h3 {
+  font-family: "inter bold";
+  font-size: 1.2em;
+  margin: 15px 0 5px;
+  color: var(--blanco);
 }
 
-.galeria article button{
-    background-color: var(--naranja);
-    color: var(--blanco);
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
+.galeria article p {
+  font-family: "inter regular";
+  font-size: 0.9em;
+  margin: 0 15px 15px;
+  color: var(--blanco);
 }
 
-.galeria article button:hover{
-    background-color: var(--naranjaclaro);
+.galeria article button {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-/* destinos de la galeria */
-
-.flecha-atras {
-    padding: 10px;
+.galeria article button:hover {
+  background-color: var(--naranjaclaro);
 }
 
-#centrar {
-    border-radius: 15px 15px;
-    background-color: var(--verde);
-    border: 8px solid grey;
-    max-width: 900px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--azul);
-    margin: 50px auto;
-    height: initial;
+/* === VIDEO === */
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
 }
 
-#centrar article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 3rem;
-    gap: 25px;
-    padding: 30px;
-
-    h1 {
-        font-family: inter bold;
-        font-size: 30px;
-        text-align: left;
-    }
-
-    p {
-        color: var(--azul);
-        text-align: left;
-        text-wrap: pretty;
-        font-size: 15px;
-        text-wrap-style: balance;
-        line-height: 1.5rem;
-    }
+.video h2 {
+  text-align: left;
 }
 
-
-/* video */
-
-.video{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-
-    h2 {
-        text-align: left;
-    }
-
-    p {
-        font-family: inter regular;
-        text-align: left;
-        font-size: 1.2em;
-        color: var(--azul);
-    }
+.video p {
+  font-family: "inter regular";
+  text-align: left;
+  font-size: 1.2em;
+  color: var(--azul);
 }
 
 .video video {
-    max-width: 100%;
-    height: auto;
-    padding: 20px;
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
 }
 
-
-/* celular */
-
-@media screen and (max-widht: 600px) {
-}
-
-/* --- BANNER CON SLIDES AUTOMÁTICOS --- */
+/* === ANIMACIÓN DE BANNER === */
 .destino-destacado {
   position: relative;
   width: 100%;
@@ -451,7 +396,7 @@ input{
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: cambioBanner 15s infinite;
+  animation: cambioBanner 15s infinite ease-in-out;
 }
 
 .destino-destacado img:nth-child(1) {
@@ -474,7 +419,7 @@ input{
   100% { opacity: 0; }
 }
 
-/* --- ANIMACIÓN SUAVE EN PREGUNTAS FRECUENTES --- */
+/* === ANIMACIÓN SUAVE EN PREGUNTAS FRECUENTES === */
 details {
   overflow: hidden;
   transition: all 0.4s ease;
@@ -507,23 +452,6 @@ details[open] p {
   opacity: 1;
   max-height: 300px;
   margin-top: 10px;
-}
-
-/* --- RESPONSIVE --- */
-@media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  #crear-usuario article {
-    flex-direction: column;
-  }
-
-  .galeria {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 /* --- SECCIÓN OFERTAS (con estilo de galería) --- */
@@ -582,4 +510,21 @@ details[open] p {
   font-family: "inter regular";
   color: var(--naranjaclaro);
   font-size: 1em;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #crear-usuario article {
+    flex-direction: column;
+  }
+
+  .galeria {
+    flex-direction: column;
+    align-items: center;
+  }
 }
