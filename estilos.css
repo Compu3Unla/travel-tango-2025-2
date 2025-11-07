@@ -886,15 +886,23 @@ details[open] p {
   }
 
   header .contenedor {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 5px;
   }
 
-  nav {
-    flex-direction: column;
-    gap: 5px;
-    font-size: 12px;
+  .contenedor img{
+    width: 200px;
+    height: auto;
+  }
+
+  .contenedor nav {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
   }
 
   .bienvenida .contenido-bienvenida {
@@ -914,6 +922,20 @@ details[open] p {
   .texto-bienvenida p {
     font-size: 0.85em;
   }
+
+  .destino-destacado {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .destino-destacado img {
+    width: 100%;
+    height: auto;
+  }
+
 
   .buscador-de-vuelos h3 {
     font-size: 14px;
