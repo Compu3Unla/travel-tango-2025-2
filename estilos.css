@@ -189,6 +189,15 @@ ul {
   line-height: 1.4rem;
   padding: 30px;
   max-width: 600px;
+
+  a {
+  text-decoration: none;
+  color: var(--azul);
+  }
+  
+  a:hover {
+  color: var(--naranja);
+  }
 }
 
 .quienes-somos p,
@@ -311,6 +320,7 @@ input {
     box-shadow: 0 4px 10px;
     overflow: hidden;
     text-align: center;
+    transition: all 0.3s  ease;
 }
 
 .galeria article:hover {
@@ -361,7 +371,6 @@ input {
 }
 
 /* destinos de la galeria */
-
 .flecha-atras {
     padding: 10px;
 }
