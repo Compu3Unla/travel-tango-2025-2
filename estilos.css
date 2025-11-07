@@ -245,7 +245,8 @@ ul {
 }
 
 #quienes-somos img {
-  width: 283px;
+  border-radius: 15px;
+  width: 480px;
   height: auto;
 }
 
@@ -261,11 +262,12 @@ ul {
 
 #crear-usuario h1 {
   color: var(--naranja);
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.4;
   font-family: "inter italic";
   margin-bottom: 40px;
-  max-width: 800px;
+  max-width: 500px;
+  padding: 25px;
 }
 
 #crear-usuario article {
@@ -292,7 +294,7 @@ ul {
   flex: 1;
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 form {
