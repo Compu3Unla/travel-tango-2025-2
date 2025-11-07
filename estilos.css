@@ -342,6 +342,147 @@ input {
   text-align: left;
 }
 
+main section {
+  margin-top: 100px;
+}
+
+.buscador-de-vuelos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  gap: 30px;
+  width: 100%;
+  background: #29235C;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.buscador-de-vuelos h3 {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.buscador-de-vuelos .tipos-viajes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 1000px;
+  height: 49px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.buscador-de-vuelos .tipos-viajes button {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 74PX;
+  border: 2px solid #FFFFFF;
+  border-radius: 45px;
+  background: transparent;
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 30px;
+  transition: all 0.3s ease;
+  min-width: 180px;
+}
+
+.buscador-de-vuelos .tipos-viajes button:hover {
+  background: #FFFFFF;
+  color: #29235C;
+}
+
+.buscador-de-vuelos form.vuelos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.buscador-de-vuelos form.vuelos input[type="text"],
+.buscador-de-vuelos form.vuelos input[type="date"] {
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+  background: transparent;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 20px;
+  height: 74px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.buscador-de-vuelos form.vuelos input[placeholder="Origen"],
+.buscador-de-vuelos form.vuelos input[placeholder="Destino"],
+.buscador-de-vuelos form.vuelos input[placeholder="Fecha de ida"],
+.buscador-de-vuelos form.vuelos input[placeholder="Fecha de vuelta"] {
+  width: 210px;
+}
+
+.buscador-de-vuelos form.vuelos input[placeholder="Pasajeros y clase"] {
+  width: 300px;
+}
+
+.buscador-de-vuelos form.vuelos input[type="text"]::placeholder {
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.buscador-de-vuelos form.vuelos input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.buscador-de-vuelos form.vuelos input:hover {
+  background: #FFFFFF;
+  color: #29235C;
+}
+
+.buscador-de-vuelos .opcion-extra {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.buscador-de-vuelos .opcion-extra label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buscador-de-vuelos .opcion-extra input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #fff;
+}
+
 .galeria {
   display: flex;
   flex-wrap: wrap;
