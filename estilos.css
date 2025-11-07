@@ -875,7 +875,7 @@ details[open] p {
   }
 }
 
-@media screen and (max-width: 500px), screen and (max-height: 800px) {
+@media screen and (max-width: 500px){
   body {
     max-width: 500px;
     margin: 0 auto;
