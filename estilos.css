@@ -169,44 +169,6 @@ ul {
   gap: 20px;
 }
 
-/* === INDEX === */
-.bienvenida {
-    width: 100%;
-    padding: 40px 0;
-}
-
-.contenido-bienvenida {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.contenido-bienvenida img {
-  width: 45%;
-  object-fit: cover;
-}
-
-.texto-bienvenida {
-  width: 45%;
-  text-align: center;
-  
-  h2{
-    font-size: 2rem;
-    color: var(--azul);
-    margin-bottom: 15px;
-  }
-
-  p {
-    font-size: 1.2rem;
-    color: var(--azul);
-    line-height: 1.6;
-  }
-}
-
 /* === CONTACTO === */
 #quienes-somos article {
   display: flex;
@@ -232,7 +194,7 @@ ul {
   text-decoration: none;
   color: var(--azul);
   }
-
+  
   a:hover {
   color: var(--naranja);
   }
@@ -624,6 +586,25 @@ details[open] p {
   color: var(--naranjaclaro);
   font-size: 1em;
 }
+
+/* --- DESTINOS EN 5 COLUMNAS Y 2 FILAS --- */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.galeria article {
+  width: 100%;
+  max-width: 250px;
+}
+
 
 /* === RESPONSIVE === */
 @media screen and (max-width: 600px) {
