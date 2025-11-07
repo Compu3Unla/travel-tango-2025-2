@@ -299,17 +299,6 @@ input {
   transition: all 0.5s ease-in-out;
 }
 
-.galeria article {
-  background-color: var(--azul);
-  color: var(--blanco);
-  width: 250px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  text-align: center;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
 .galeria article:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
@@ -363,17 +352,6 @@ input {
   flex-direction: column;
   align-items: center;
   padding: 50px;
-}
-
-.video h2 {
-  text-align: left;
-}
-
-.video p {
-  font-family: "inter regular";
-  text-align: left;
-  font-size: 1.2em;
-  color: var(--azul);
 }
 
 .video video {
