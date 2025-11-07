@@ -935,9 +935,8 @@ details[open] p {
   .destino-destacado img {
     width: 100%;
     height: auto;
+    object-fit: contain;
   }
-
-  
 
   .buscador-de-vuelos h3 {
     font-size: 14px;
