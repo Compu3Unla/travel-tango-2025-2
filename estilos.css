@@ -929,6 +929,7 @@ details[open] p {
     overflow: visible;
     display: block;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .destino-destacado img {
@@ -936,6 +937,7 @@ details[open] p {
     height: auto;
   }
 
+  
 
   .buscador-de-vuelos h3 {
     font-size: 14px;
@@ -948,6 +950,7 @@ details[open] p {
     justify-content: center;
     gap: 5px;
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .buscador-de-vuelos .tipos-viajes button {
@@ -1016,6 +1019,10 @@ details[open] p {
     margin-left: 5px;
   }
 
+  .ofertas {
+    margin-bottom: 30px;
+  }
+
   .ofertas h3 {
     font-size: 0.9em;
     text-align: center;
@@ -1024,7 +1031,7 @@ details[open] p {
   .contenedor-ofertas {
     flex-direction: column;
     gap: 5px;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -1045,6 +1052,8 @@ details[open] p {
     padding: 5px;
     max-width: 90%;
     margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 20px 10px;
   }
 
   .preguntas h3 {
