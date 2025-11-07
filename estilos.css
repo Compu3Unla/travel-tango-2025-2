@@ -169,6 +169,44 @@ ul {
   gap: 20px;
 }
 
+/* === INDEX === */
+.bienvenida {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.contenido-bienvenida {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contenido-bienvenida img {
+  width: 45%;
+  object-fit: cover;
+}
+
+.texto-bienvenida {
+  width: 45%;
+  text-align: center;
+  
+  h2{
+    font-size: 2rem;
+    color: var(--azul);
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: var(--azul);
+    line-height: 1.6;
+  }
+}
+
 /* === CONTACTO === */
 #quienes-somos article {
   display: flex;
@@ -194,7 +232,7 @@ ul {
   text-decoration: none;
   color: var(--azul);
   }
-  
+
   a:hover {
   color: var(--naranja);
   }
