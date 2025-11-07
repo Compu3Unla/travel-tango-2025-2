@@ -308,7 +308,7 @@ input{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease,
-    box shadow; 0.3s ease;
+    box shadow: 0.3s ease;
 }
 
 .galeria article:hover{
@@ -377,26 +377,43 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 3rem;
+    line-height: 1rem;
     gap: 25px;
     padding: 30px;
-
+    
     h1 {
         font-family: inter bold;
         font-size: 30px;
         text-align: left;
+        margin-bottom: 15px;
     }
 
+    h2 {
+        font-family: inter bold italic;
+        color: var(--naranja);
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 20px;
+        line-height: 1.5rem;
+    }
+    
     p {
         color: var(--azul);
         text-align: left;
         text-wrap: pretty;
         font-size: 15px;
         text-wrap-style: balance;
-        line-height: 1.5rem;
+        line-height: 1.2rem;
     }
 }
 
+#centrar article img{
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--azul);
+}
 
 /* video */
 
